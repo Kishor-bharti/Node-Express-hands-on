@@ -32,3 +32,15 @@ DB_HOST=localhost
 And load it in your Node server:
 `require("dotenv").config();`
 
+### Database used for this project:
+```sql
+CREATE DATABASE learning;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+SELECT *FROM users;
+```

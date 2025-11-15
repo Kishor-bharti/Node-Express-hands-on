@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User App</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 40px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+        }
+        #users {
+            margin-top: 20px;
+        }
+        .user-card {
+            background: #f0f0f0;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>User Management</h1>
+
+    <h3>Add a User</h3>
+    <input type="text" id="username" placeholder="Enter name">
+    <button onclick="addUser()">Add User</button>
+
+    <h3>All Users</h3>
+    <button onclick="fetchUsers()">Load Users</button>
+
+    <div id="users"></div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
