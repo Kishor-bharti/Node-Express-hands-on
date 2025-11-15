@@ -14,6 +14,8 @@
         - `.env`
     - Install necessary modules:
         - `npm install express mysql2 dotenv cors`
+    - Create a public folder (to server public files like `index.html`)
+    use `app.use(express.static("public"));` in the server.js, this will show your HTML frontend.
 
 3. Use `npm install --save-dev nodemon` for development!
 Add a script inside `package.json`:
